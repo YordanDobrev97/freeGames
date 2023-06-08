@@ -1,22 +1,24 @@
-import { Component, ReactNode } from 'react'
+import { Box } from '@mui/material'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
 
 import Header from './components/Header/Header'
+import Background from './components/Background/Background'
 
-type State = { 
-}
+import './App.css'
 
-export default class App extends Component<any, State> {
-  constructor() {
-    super({})
-    this.state = {
-    }
-  }
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Luckiest Guy',
+  },
+});
 
-  render(): ReactNode {
-    return (
-      <>
+export default function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <Box>
         <Header />
-      </>
-    )
-  }
+        <Background />
+      </Box>
+    </ThemeProvider>
+  );
 }

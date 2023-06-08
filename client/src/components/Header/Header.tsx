@@ -15,7 +15,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function Header() {
-  const styles = useStyles();
+  const styles = useStyles()
 
   return (
     <AppBar>
@@ -27,7 +27,6 @@ export default function Header() {
             variant='h4'
             component='span'
             sx={{
-              fontFamily: 'Luckiest Guy',
               marginLeft: '-20px',
               marginTop: '10px',
               background: 'linear-gradient(90deg, white, orange)',
@@ -54,5 +53,5 @@ export default function Header() {
         </Box>
       </Toolbar>
     </AppBar>
-  );
+  )
 }
