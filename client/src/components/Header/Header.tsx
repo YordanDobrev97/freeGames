@@ -46,9 +46,10 @@ export default function Header() {
                     color: 'black',
                     borderRadius: 8,
                     fontSize: 22,
-                    width: '100%'
+                    width: '100%',
+                    fontFamily: 'serif'
                 }}>
-                Login
+                Вход
             </Button>
         </Box>
       </Toolbar>
